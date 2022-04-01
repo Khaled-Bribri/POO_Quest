@@ -13,9 +13,9 @@ echo $car->forward();
 var_dump($car::ALLOWED_ENERGIES);
 
 
-require_once 'Camion.php';
+require_once 'Truck.php';
 
-$camion = new Camion("Red",3,"Benzin",10);
+$camion = new Truck("Red",3,"Benzin",10);
 $a=$camion->getCapacityStock();
 $b=$camion->setCharge(9);
 
