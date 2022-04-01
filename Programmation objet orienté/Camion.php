@@ -15,19 +15,17 @@ class Camion extends Vehicle{
         
     }
 
-    public function infilling($CapacityStock,$Charge) {
+public function infilling($CapacityStock,$Charge) {
+        while($CapacityStock>$Charge){
 
-        if($CapacityStock<=$Charge){
-
-            return "the vehicul is full";
+            $Charge++;
+            return "the camion is infilling";
+            
         }
-        else
-        {
-            return "the vehicul is not full";
-        }
-
-
-    }
+        
+        return "the camion is full";
+    
+}
 
 
     public function getCapacityStock(): int
