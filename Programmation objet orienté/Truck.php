@@ -1,7 +1,7 @@
 <?php
 require_once 'Vehicle.php';
 
-class Camion extends Vehicle{
+class Truck extends Vehicle{
 
 
     private int $CapacityStock;
@@ -19,11 +19,11 @@ public function infilling($CapacityStock,$Charge) {
         while($CapacityStock>$Charge){
 
             $Charge++;
-            return "the camion is infilling";
+            return "the truck is infilling";
             
         }
         
-        return "the camion is full";
+        return "the truck is full";
     
 }
 
